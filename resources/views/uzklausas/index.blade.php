@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+
 <div class="card-body">
     <table class="table">
         <tr>
@@ -19,5 +21,9 @@
         </tr>
         @endforeach
     </table>
+    </div>
+    <div class="form-group row" style="float: right; margin-right:2px;">
+        <a href="/bandomoji-forma" class="btn btn-primary">Apklausa</a>
+    </div>
 </div>
 @endsection

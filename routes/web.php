@@ -17,17 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/bandomoji-forma', [App\Http\Controllers\PaperformController::class, 'form'])->name('paperform.form');
 Route::get('/bandomoji-forma/webhook', [App\Http\Controllers\UzklausaController::class, 'index'])->name('uzklausas.index');
 
-Auth::routes();
+Auth::routes(['register' => false, 'login' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
