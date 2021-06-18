@@ -18,18 +18,17 @@
             <td>{{ $uzklausa->email }}</td>
             <td>{{ $uzklausa->request }}</td>
             <td>
-            {{-- <td>
-                <form action={{ route('uzklausa.destroy', $uzklausa->id) }} method="POST">
+                {{-- <form action={{ route('uzklausa.destroy', $uzklausa->id) }} method="POST">
                     <a class="btn btn-success" href={{ route('uzklausa.edit', $uzklausa->id) }}>Redaguoti</a>
                     @csrf @method('delete')
                     <input type="submit" class="btn btn-danger" value="Trinti"/>
                 </form>
-            </td> --}}
+            </td>
         </tr>
         @endforeach
     </table>
     <div>
         <a href="{{ route('uzklausa.create') }}" class="btn btn-success">Pridėti</a>
-    </div>
+    </div> --}}
 </div>
 @endsection
