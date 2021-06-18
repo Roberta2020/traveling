@@ -22,4 +22,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/bandomoji-forma', [App\Http\Controllers\PaperformController::class, 'form'])->name('paperform.form');
-Route::get('/bandomoji-forma/webhook', [App\Http\Controllers\UzklausaController::class, 'index'])->name('uzklausos.index');
+Route::get('/bandomoji-forma/webhook', [App\Http\Controllers\UzklausaController::class, 'index'])->name('uzklausas.index');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

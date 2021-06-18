@@ -14,7 +14,7 @@ class UzklausaController extends Controller
      */
     public function index()
     {
-        //
+        return view('uzklausas.index', ['uzklausas' => Uzklausa::orderBy('name')->get()]);    
     }
 
     /**
